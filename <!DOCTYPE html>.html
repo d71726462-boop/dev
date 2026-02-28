@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Search Generator</title>
+</head>
+<body>
+  <button onclick="randomSearch()">Search Random Stuff</button>
+
+  <script>
+    function randomSearch() {
+      const chars = "abcdefghijklmnopqrstuvwxyz0123456789œ∑®†¥¨ø∆˙©ƒ∂ß出す位アブダビでßåß®†¥¨";
+      let result = "";
+      for (let i = 0; i < 9999; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      window.open("https://www.youtube.com/search?q=" + result, "_blank");
+    }
+  </script>
+</body>
+</html>
